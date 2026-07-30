@@ -5,6 +5,25 @@ Base segura y reproducible para desarrollar con un Unitree G1 EDU+. El proyecto 
 habilitar explícitamente el adaptador de Unitree. La integración de audio sí fue validada con el
 micrófono del PC y el altavoz del G1, sin habilitar movimiento.
 
+## Migracion a AgentIQ
+
+Este repositorio conserva la validacion de hardware y el prototipo directo de
+ElevenLabs. El runtime productivo para conversaciones es ahora AgentIQ Device
+Bridge; no se deben ejecutar ambos procesos al mismo tiempo.
+
+En el PC conectado al robot, actualizar este repositorio y pedirle a Codex:
+
+```text
+Lee docs/agentiq-device-bridge-handoff.md completo. Ejecuta el empalme por
+fases, sin borrar este repositorio, sin mostrar secretos y sin habilitar
+movimientos. Detente solamente si necesitas que yo introduzca el PIN o una
+password en la terminal.
+```
+
+El procedimiento completo, los preflight de WSL/Ubuntu, Ethernet, SSH, SDK2,
+audio USB, pairing y criterios de aceptacion estan en
+[docs/agentiq-device-bridge-handoff.md](docs/agentiq-device-bridge-handoff.md).
+
 ## Inicio rápido
 
 Requisitos de desarrollo: Python 3.11+ y Git. Ubuntu 22.04 es el entorno recomendado para ROS 2
