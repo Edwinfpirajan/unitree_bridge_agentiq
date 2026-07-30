@@ -1,0 +1,4 @@
+interface:
+  display_name: "G1 Onboard"
+  short_description: "Configura y verifica un Unitree G1 con seguridad"
+  default_prompt: "Usa $g1-onboard para preparar y verificar mi Unitree G1."

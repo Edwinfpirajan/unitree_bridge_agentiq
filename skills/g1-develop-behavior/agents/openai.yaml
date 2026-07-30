@@ -1,0 +1,4 @@
+interface:
+  display_name: "G1 Develop Behavior"
+  short_description: "Diseña comportamientos G1 sim-first y con límites"
+  default_prompt: "Usa $g1-develop-behavior para implementar este comportamiento del G1."

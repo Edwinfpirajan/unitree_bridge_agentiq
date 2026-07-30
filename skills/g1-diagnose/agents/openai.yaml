@@ -1,0 +1,4 @@
+interface:
+  display_name: "G1 Diagnose"
+  short_description: "Diagnostica red, DDS, estado y registros del G1"
+  default_prompt: "Usa $g1-diagnose para investigar este problema de mi G1."

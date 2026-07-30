@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "g1-edu-u2"
+version = "0.1.0"
+description = "Safe-first Unitree G1 EDU application scaffold"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6", "mypy>=1.11"]
+unitree = ["unitree-sdk2py"]
+voice = ["elevenlabs>=2"]
+conversation = ["elevenlabs[pyaudio]>=2"]
+
+[project.scripts]
+g1ctl = "g1edu.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100

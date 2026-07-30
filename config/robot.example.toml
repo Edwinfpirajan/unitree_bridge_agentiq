@@ -1,0 +1,29 @@
+[robot]
+name = "g1-edu-u2"
+model = "g1-edu-plus"
+variant = "29dof-fixed-hands"
+mode = "mock"                 # mock | simulation | hardware
+network_interface = "lo"
+dds_domain_id = 1             # simulación != hardware; Unitree usa normalmente 0 en el robot
+
+[safety]
+hardware_enabled = false
+require_operator_confirmation = true
+max_linear_speed_mps = 0.15
+max_angular_speed_rps = 0.25
+command_timeout_ms = 100
+state_stale_after_ms = 250
+
+[logging]
+level = "INFO"
+directory = "logs"
+
+[voice]
+provider = "elevenlabs"
+model_id = "eleven_multilingual_v2"
+output_format = "mp3_44100_128"
+language = "es"
+preferred_voice_name = "David - Warm, Friendly and Warm"
+preferred_accent = "Latin American"
+output_directory = "audio-output"
+max_characters = 500
